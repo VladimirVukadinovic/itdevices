@@ -1,0 +1,68 @@
+HELP
+
+#GIT URL
+https://github.com/VladimirVukadinovic/itdevices.git
+
+#otklanjanje greške artisan migrate u Laravel 6
+    app\Providers\AppServiceProvider.php
+
+    public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+	
+#console tools
+-	php artisan tinker
+
+WINDOWS
+
+#instalacija Composer-a (globalno)
+-win	Windows setup.exe
+
+#instalacija GIT-a
+-win	Windows setup.exe
+
+#instalacija Node.js
+-win	Windows setup.exe
+
+#instalacija Laravel instaler-a (globalno)
+-cmd	composer global require laravel/installer
+
+MYSQL
+
+#podešavanje base Storage Engine InnoDB
+-	my.ini -> [mysqld] -> add default-storage-engine=InnoDB
+
+PHPSTORM
+
+#path to composer.phar (global)
+-	C:\ProgramData\ComposerSetup\bin\composer.phar
+
+#path Package manager
+-	C:\Program Files\nodejs\node_modules\npm
+
+LARAVEL PROJEKAT
+
+#kreiranje Laravel projekta
+-	laravel new itdevices		
+
+#instalacija laravel-ide-helper (u folderu projekta)
+-	composer require --dev barryvdh/laravel-ide-helper
+-	php artisan ide-helper:generate (nije potebno ako se prijekat povuce preko git-a)
+
+#kreiranje autentifikacije (u folderu projekta)
+-   composer require laravel/ui
+-	php artisan ui vue --auth
+-	npm install
+-	npm run dev
+
+
+-Enable Laravel plugin	PHPStorm podešavanja
+
+-C:\Program Files\nodejs\node_modules\npm	-Putanja do Package managera (PHPStorm podešavanja)
+
+- setovanje PHP interpretera (PHPStorm podešavanja)
+
+-path to composer.phar (global)
+    C:\ProgramData\ComposerSetup\bin\composer.phar
+	
