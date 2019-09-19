@@ -10,7 +10,7 @@ https://github.com/VladimirVukadinovic/itdevices.git
     {
         Schema::defaultStringLength(191);
     }
-	
+
 #console tools
 -	php artisan tinker
 
@@ -25,7 +25,7 @@ WINDOWS
 #instalacija Node.js
 -win	Windows setup.exe
 
-#instalacija Laravel instaler-a (globalno)
+#instalacija Laravel installer-a (globalno)
 -cmd	composer global require laravel/installer
 
 MYSQL
@@ -34,6 +34,10 @@ MYSQL
 -	my.ini -> [mysqld] -> add default-storage-engine=InnoDB
 
 PHPSTORM
+
+#Enable Laravel plugin
+
+#setovanje PHP interpretera
 
 #path to composer.phar (global)
 -	C:\ProgramData\ComposerSetup\bin\composer.phar
@@ -44,7 +48,7 @@ PHPSTORM
 LARAVEL PROJEKAT
 
 #kreiranje Laravel projekta
--	laravel new itdevices		
+-	laravel new itdevices
 
 #instalacija laravel-ide-helper (u folderu projekta)
 -	composer require --dev barryvdh/laravel-ide-helper
@@ -56,13 +60,11 @@ LARAVEL PROJEKAT
 -	npm install
 -	npm run dev
 
+#Generate your application encryption key
+-   php artisan key:generate
 
--Enable Laravel plugin	PHPStorm podešavanja
+#update projekta, kreiranje vendor foldera (u folderu projekta)
+-   composer update
 
--C:\Program Files\nodejs\node_modules\npm	-Putanja do Package managera (PHPStorm podešavanja)
-
-- setovanje PHP interpretera (PHPStorm podešavanja)
-
--path to composer.phar (global)
-    C:\ProgramData\ComposerSetup\bin\composer.phar
-	
+#kreiranje tabela
+-   php artisan migrate
