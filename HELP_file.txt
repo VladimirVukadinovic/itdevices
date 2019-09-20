@@ -1,4 +1,4 @@
-HELP
+==========HELP=START===========================================================
 
 #GIT URL
 https://github.com/VladimirVukadinovic/itdevices.git
@@ -14,7 +14,9 @@ https://github.com/VladimirVukadinovic/itdevices.git
 #console tools
 -	php artisan tinker
 
-WINDOWS
+==========HELP=END=============================================================
+
+==========WINDOWS=START========================================================
 
 #instalacija Composer-a (globalno)
 -win	Windows setup.exe
@@ -33,11 +35,15 @@ MYSQL
 #podešavanje base Storage Engine InnoDB
 -	my.ini -> [mysqld] -> add default-storage-engine=InnoDB
 
-PHPSTORM
+==========WINDOWS=END==========================================================
+
+==========PHPSTORM=START=======================================================
 
 #Enable Laravel plugin
 
 #setovanje PHP interpretera
+
+#disable HINTS
 
 #path to composer.phar (global)
 -	C:\ProgramData\ComposerSetup\bin\composer.phar
@@ -45,7 +51,12 @@ PHPSTORM
 #path Package manager
 -	C:\Program Files\nodejs\node_modules\npm
 
-LARAVEL PROJEKAT
+#dodati Live Templates
+-   Preferences | Tools | Settings Repository
+    -> Add Read-only Source https://github.com/koomai/phpstorm-laravel-live-templates
+
+==========PHPSTORM=END=========================================================
+==========LARAVEL=START========================================================
 
 #kreiranje Laravel projekta
 -	laravel new itdevices
@@ -68,3 +79,12 @@ LARAVEL PROJEKAT
 
 #kreiranje tabela
 -   php artisan migrate
+
+#kreiranje koltrolera
+-   php artisan make:controller controller_name (npr: UsersController)
+
+#dodati laravelcollective
+-   composer.json|require
+    ->Add "laravelcollective/html": "^6.0"
+
+==========LARAVEL=END==========================================================
