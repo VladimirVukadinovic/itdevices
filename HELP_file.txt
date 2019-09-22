@@ -55,6 +55,9 @@ MYSQL
 -   Preferences | Tools | Settings Repository
     -> Add Read-only Source https://github.com/koomai/phpstorm-laravel-live-templates
 
+#dupla deklaracija klasa nakon instalacije _ide_helper.php
+-   _ide_helper.php -> Mark as Plain Text
+
 ==========PHPSTORM=END=========================================================
 ==========LARAVEL=START========================================================
 
@@ -87,4 +90,15 @@ MYSQL
 -   composer.json|require
     ->Add "laravelcollective/html": "^6.0"
 
+#migracije-kreiranje tabela u Bazi
+-   php artisan make:migration create_devices_table
+
+#lista svih ruta u projektu
+-   php artisan route:list
+
+#definisanje ruta po konvenciji (primjer devices)
+-   Route::resource('devices', 'DevicesController');
+
+#generisanje kontrolera i modela po konvenciji (primjer Devices)
+-   php artisan make:controller DevicesController -r -m Device
 ==========LARAVEL=END==========================================================

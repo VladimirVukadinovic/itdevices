@@ -17,8 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('devices', 'DevicesController');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/test/{anything}', function ($anything) {
+Route::get('/test', function () {
     return view('test');
 });
