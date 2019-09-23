@@ -27,7 +27,7 @@ class DevicesController extends Controller
      */
     public function create()
     {
-        //
+        return view('devices.create');
     }
 
     /**
@@ -38,7 +38,14 @@ class DevicesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $device = new Device();
+        $device->name = request('name');
+        $device->serial_number = request('serial_number');
+        $device->inventory_number = request('inventory_number');
+
+        $device->save();
+
+        return redirect('/devices');
     }
 
     /**

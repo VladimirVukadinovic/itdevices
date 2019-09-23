@@ -18,7 +18,7 @@ class CreateDevicesTable extends Migration
             $table->string('name');
             $table->string('serial_number');
             $table->string('inventory_number');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
