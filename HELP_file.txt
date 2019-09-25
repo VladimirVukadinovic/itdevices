@@ -11,8 +11,14 @@ https://github.com/VladimirVukadinovic/itdevices.git
         Schema::defaultStringLength(191);
     }
 
+#otklanjanje greške 500
+-   kreirati .env
+-
+
 #console tools
 -	php artisan tinker
+-   generisati php artisan key:generate
+-   setovati my.ini -> [mysqld] -> add default-storage-engine=InnoDB
 
 ==========HELP=END=============================================================
 

@@ -21,14 +21,8 @@
             {!! Form::text('inventory_number', null, ['class' => 'form-control']) !!}
         </div>
 
-        {!! Form::submit('Submit', ['class' => 'form-control']) !!}
-
-        <!-- Sasasasa Form Input-->
-        <div class="form-group">
-            {!! Form::label('sasasasa', 'Sasasasa:') !!}
-            {!! Form::password('sasasasa', de) !!}
-        </div>
-
+        <!-- Submit Form Input-->
+        {!! Form::submit('Submit' , ['class' => 'form-control']) !!}
 
     </form>
 @endsection
