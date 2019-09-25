@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('devices', 'DevicesController');
+Route::resource('/devices', 'DevicesController');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

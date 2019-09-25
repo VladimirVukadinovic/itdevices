@@ -21,8 +21,7 @@
             {!! Form::text('inventory_number', null, ['class' => 'form-control']) !!}
         </div>
 
-        <!-- Submit Form Input-->
-        {!! Form::submit('Submit' , ['class' => 'form-control']) !!}
+        {!! Form::submit('Submit', ['class' => 'form-control']) !!}
 
     </form>
 @endsection
