@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <h1>New Device</h1>
+    <h1 class="title">New Device</h1>
     <form method="POST" action="/devices">
         @csrf
         <!-- Name Form Input-->
