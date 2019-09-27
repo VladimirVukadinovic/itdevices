@@ -2,26 +2,50 @@
 @section('content')
     <h1 class="title">New Device</h1>
     <form method="POST" action="/devices">
-        @csrf
+    @csrf
+
         <!-- Name Form Input-->
-        <div class="form-group">
-            {!! Form::label('name', 'Name:') !!}
-            {!! Form::text('name', null, ['class' => 'form-control']) !!}
+        <div class="field">
+            <label class="label" for="name">Device name:</label>
+
+            <div class="control">
+                <input class="input" type="text" name="name" placeholder="Name">
+            </div>
         </div>
 
         <!-- Serial_number Form Input-->
-        <div class="form-group">
-            {!! Form::label('serial_number', 'Serial number:') !!}
-            {!! Form::text('serial_number', null, ['class' => 'form-control']) !!}
+        <div class="field">
+            <label class="label" for="serial_number">Serial number:</label>
+
+            <div class="control">
+                <input class="input" type="text" name="serial_number" placeholder="Serial_number">
+            </div>
         </div>
 
         <!-- Inventory_number Form Input-->
-        <div class="form-group">
-            {!! Form::label('inventory_number', 'Inventory number:') !!}
-            {!! Form::text('inventory_number', null, ['class' => 'form-control']) !!}
+        <div class="field">
+            <label class="label" for="inventory_number">Inventory number:</label>
+
+            <div class="control">
+                <input class="input" type="text" name="inventory_number" placeholder="Inventory_number">
+            </div>
         </div>
 
-        {!! Form::submit('Submit', ['class' => 'form-control']) !!}
+        <!-- Description Form Input-->
+        <div class="field">
+            <label class="label" for="description">Description:</label>
+
+            <div class="control">
+                <textarea class="textarea" name="description" placeholder="Description"></textarea>
+            </div>
+        </div>
+
+        <!-- Submit Form Input-->
+        <div class= "field">
+            <div class="control">
+                <button class="button is-link" type="submit">Submit</button>
+            </div>
+        </div>
 
     </form>
 @endsection
