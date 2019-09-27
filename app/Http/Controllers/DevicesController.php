@@ -80,7 +80,7 @@ class DevicesController extends Controller
      */
     public function update(Request $request, Device $device)
     {
-        $device->save();
+        $device->update(request(['name', 'serial_number', 'inventory_number', 'description']));
 
         return redirect('/devices');
     }
