@@ -56,7 +56,7 @@ class DevicesController extends Controller
      */
     public function show(Device $device)
     {
-        //
+        return view('devices.show', compact('device'));
     }
 
     /**
