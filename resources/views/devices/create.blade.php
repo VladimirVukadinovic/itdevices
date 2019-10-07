@@ -44,6 +44,7 @@
         <div class= "field">
             <div class="control">
                 <button class="button is-link" type="submit">Submit</button>
+                <a class="button" href="/devices">Back</a>
             </div>
         </div>
 

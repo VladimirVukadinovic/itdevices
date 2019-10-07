@@ -60,7 +60,5 @@
                 <button class="button" type="submit">Delete</button>
             </div>
         </div>
-
-
     </form>
 @endsection

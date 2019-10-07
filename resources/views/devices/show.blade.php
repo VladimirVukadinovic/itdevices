@@ -1,7 +1,6 @@
 @extends('layout')
 @section('content')
     <h1 class="title">{{ $device->name }}</h1>
-    <fieldset disabled>
         <div class="field">
             <label class="label" for="name">Name</label>
 
@@ -37,5 +36,6 @@
                 <textarea class="textarea" name="description" placeholder="Description">{{ $device->description }}</textarea>
             </div>
         </div>
-    </fieldset>
+        <a class="button" href="/devices/{{ $device->id }}/edit">Edit</a>
+        <a class="button" href="/devices/">Back</a>
 @endsection
